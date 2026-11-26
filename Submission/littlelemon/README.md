@@ -4,7 +4,7 @@ This is a Django project named `littlelemon` with an app named `restaurant`. It 
 
 ## Requirements
 
-- **Python 3.12 or newer.** The Pipfile asks for 3.14. The project uses Django 6.1, which needs Python 3.12+. If you have a different 3.12+ version, change `python_version` in `Pipfile`.
+- **Python 3.8 or newer.** The Pipfile doesn't pin a Python version, so `pipenv install` uses your Python and installs the newest Django that supports it. The project has been tested with Django 4.2, 5.2 and 6.1.
 - **MySQL** running on `127.0.0.1:3306`.
 - **pipenv**
 
