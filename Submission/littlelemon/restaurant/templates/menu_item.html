@@ -26,7 +26,9 @@
          <!--End col-->
          <!--Begin col-->
          <div class="column">
-            <img src="/Final Assessment/littlelemon/restaurant/static/img/{{menu_item.name}}.jpg" alt="{{ menu_item.name}}" />
+            {% with 'img/menu_items/'|add:menu_item.name|add:'.jpg' as image_path %}
+            <img src="{% static image_path %}" alt="{{ menu_item.name }}" />
+            {% endwith %}
         </div>
          <!--End col-->
       </div>
